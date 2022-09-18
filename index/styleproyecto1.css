@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global */
+#header {
+    background: radial-gradient(rgb(62, 190, 7), #a3cd1b);
+    margin: 0px auto;
+    padding: 25px;
+    box-sizing: content-box;
+    text-align: center;
+    width: 100%;
+} 
+
+#header .logo img {
+    width: 300px;
+    height: auto;
+    background-position: top center;
+
+    }
+#header .menu ul li {
+    display: inline;
+}
+#header .menu ul li a {
+    color: beige;
+    text-decoration: none;
+
+}
+#header .menu ul li a:hover {
+    color: #ac0909;
+}
+
+#footer {
+    background: radial-gradient(rgb(62, 190, 7), #a3cd1b);
+ 
+   width: 100%;
+}
+#footer .contacto {
+    margin: 0px;
+    text-align: center;
+    
+
+}
+#footer .redessociales {
+    
+
+    width: 300px;
+    height: auto;
+    background-position: top center;
+    margin: 0px auto;
+    padding: 25px;
+    box-sizing: content-box;
+    text-align: center;
+
+
+}
+#footer .copi {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#conteiner-intro {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    display: flex;
+    padding: 20px 20px;
+    margin: 0px;
+}
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a20707;
+}
+
+   
+
+
+
+
+
+
+
+
+/* nosotros1  */
+
+#nosotros {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    width: 100%;
+    text-align: center;
+}
+#nosotros .imagenNos {
+    width: 100%;
+    height: auto;
+    background-position: top center;
+    
+}
+#nosotros h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+   
+
+
+
+
+
+
+/* servicios1 */ 
+#servicios .peluqueria .txtpelu {
+    margin: 0px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    
+}
+#servicios .imageng {
+    margin: 100px;
+    padding-top: 0px;
+
+    width:1000px;
+    height: auto;
+    background-position: top center;
+}
+#servicios .imagenp {
+    width: 1000px;
+    height: auto;
+    background-position: top center;
+}
+#servicios {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    margin: 1px;
+    padding: 209px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#servicios {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#servicios {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#servicios h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+
+
+
+
+
+/* productos1 */ 
+#alimentosSeccion {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    text-align: center;
+   }
+#alimentosSeccion h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}   
+#alimentosSeccion .imagenp1 {
+    width: 1500px;
+    height: auto;
+    background-position: top center;
+
+}
+#alimentosSeccion .imagenp2 {
+    width: 1500px;
+    height: auto;
+    background-position: top center;
+}
+#alimentosSeccion .imagenp3 {
+    width: 1000px;
+    height: auto;
+    background-position: top center;
+}
+#alimentosSeccion .imagenp5 .imagenp4 {
+    width: 1500px;
+    height: auto;
+    background-position: top center;
+}
+
+    
+/* contacto1 */
+.contactanos {
+
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+   padding: 10px;
+   display: flex;
+   gap: 10px;
+   
+ 
+
+}
+.contactanos .titu {
+    width: 45%;
+    height: auto;
+}
+.titu h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    
+}
+
+/*moda*/
+
+.mod {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    text-align: center;
+}
+
+   
+
+.gat {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    text-align: center;
+}
+.av {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    text-align: center;
+}
+
+.jug {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+  
+    text-align: center;
+    
+ 
+    
+
+}
+.grid {
+    display: grid;
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b) ;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+    border: 2px solid black;
+}
+.grid img {
+    
+    border: 2px solid black;
+    background-size: cover;
+}
+.grid h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tarjetas {
+    text-align: center;
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b) ;
+    
+
+}
+.perrit {
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b) ;
+
+   
+}
+.card {
+    color: #f6f3f3;
+    background: radial-gradient(rgb(24, 35, 189), #f58b8b) ;
+}
+.balanceados .accordion-button {
+    background: radial-gradient(rgb(183, 184, 192), #f58b8b)
+}
+#collapseOne .vermasp  {
+  color: #a20707;
+  background-color: aqua;
+
+}
+#collapseOne  {
+    text-align: center;
+    
+}
+#collapseTwo {
+    text-align: center;
+}
+#collapseThree {
+    text-align: center;
+
+}
+.text-muted {
+    color: #f6f3f3;
+}
