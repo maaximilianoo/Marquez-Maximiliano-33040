@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 /* global */
 #header {
-    background: radial-gradient(rgb(62, 190, 7), #a3cd1b);
-    margin: 0px auto;
-    padding: 25px;
-    box-sizing: content-box;
-    text-align: center;
-    width: 100%;
+    max-width: 100%;
+    background-color:lightslategrey;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
 } 
 
 #header .logo img {
@@ -32,8 +35,8 @@
 }
 
 #footer {
-    background: radial-gradient(rgb(62, 190, 7), #a3cd1b);
- 
+   
+    background-color: lightslategrey;
    width: 100%;
 }
 #footer .contacto {
@@ -60,17 +63,47 @@
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#conteiner-intro {
-    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
-    display: flex;
-    padding: 20px 20px;
-    margin: 0px;
-}
-h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #a20707;
+.carrucel1 {
+    height: 50vh;
 }
 
+
+.conteiner-intro  {
+   
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center ;
+    padding: 20px 20px;
+    margin: 0px;
+    height: 100vh;
+    
+   background-image: url("imagenes/home/fondocelu.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+    
+}
+.botonhome {
+    width: 200px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(163, 249, 4);
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(7, 13, 189);
+}
+#todo {
+    height: 15vh;
+}
    
 
 
@@ -83,11 +116,12 @@ h2 {
 /* nosotros1  */
 
 #nosotros {
-    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+    background: radial-gradient(rgb(24, 35, 189), #f17f7f);
     width: 100%;
     text-align: center;
 }
 #nosotros .imagenNos {
+   
     width: 100%;
     height: auto;
     background-position: top center;
@@ -111,6 +145,7 @@ h2 {
     padding-top: 10px;
     text-align: center;
     width: 100%;
+    height: auto;
     
 }
 #servicios .imageng {
@@ -128,6 +163,7 @@ h2 {
 }
 #servicios {
     background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+   
     margin: 1px;
     padding: 209px;
     box-sizing: border-box;
@@ -139,16 +175,10 @@ h2 {
     text-align: center;
 }
 
-#servicios {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
 #servicios h2 {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-
+ 
 }
 
 
@@ -167,27 +197,7 @@ h2 {
     
 
 }   
-#alimentosSeccion .imagenp1 {
-    width: 1500px;
-    height: auto;
-    background-position: top center;
 
-}
-#alimentosSeccion .imagenp2 {
-    width: 1500px;
-    height: auto;
-    background-position: top center;
-}
-#alimentosSeccion .imagenp3 {
-    width: 1000px;
-    height: auto;
-    background-position: top center;
-}
-#alimentosSeccion .imagenp5 .imagenp4 {
-    width: 1500px;
-    height: auto;
-    background-position: top center;
-}
 
     
 /* contacto1 */
@@ -196,7 +206,11 @@ h2 {
     background: radial-gradient(rgb(24, 35, 189), #f58b8b);
    padding: 10px;
    display: flex;
+   flex-direction: column;
+   align-items: center;
    gap: 10px;
+   
+
    
  
 
@@ -212,33 +226,9 @@ h2 {
     
 }
 
-/*moda*/
 
-.mod {
-    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
-    text-align: center;
-}
-
-   
-
-.gat {
-    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
-    text-align: center;
-}
-.av {
-    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
-    text-align: center;
-}
-
-.jug {
-    background: radial-gradient(rgb(24, 35, 189), #f58b8b);
-  
-    text-align: center;
-    
  
-    
 
-}
 .grid {
     display: grid;
     background: radial-gradient(rgb(24, 35, 189), #f58b8b) ;
@@ -292,4 +282,36 @@ h2 {
 }
 .text-muted {
     color: #f6f3f3;
+}
+@media (min-width: 720px)  {
+    #header {
+    background-color: rgb(175, 31, 67);
+    display: flex;
+    justify-content: space-between;
+    text-align: center
+    flex-direction: row;
+   }
+
+   .conteiner-intro {
+    background-image: url(imagenes/home/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    
+     
+   }
+   #header .menu ul li a:hover {
+    color: #0e0f0e
+}
+#footer {
+   
+    background-color: rgb(175, 31, 67);
+   width: 100%;
+}
+    
+    
+
+    
 }
