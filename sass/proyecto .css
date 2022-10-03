@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 100px;
+  background: #4d4d5c;
+  padding: 0 50px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  text-transform: uppercase;
+  color: #6cc091;
+  font-weight: 200;
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: #6cc091;
+}
+
+#check {
+  display: none;
+}
+
+/*banner*/
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 50px;
+  background-image: url(../imagenes/home/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg);
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner::before {
+  content: "";
+  background: rgba(77, 77, 92, 0.203);
+  position: absolute;
+  width: 100%;
+  height: 75vh;
+  left: 0;
+}
+
+.contenido-banner h2 {
+  position: relative;
+  color: rgba(10, 7, 199, 0.9843137255);
+}
+
+.contenido-banner h3 {
+  position: relative;
+  color: rgba(10, 7, 199, 0.9843137255);
+}
+
+.animacion span {
+  max-height: 50vh;
+  font-size: 55px;
+  background: radial-gradient(rgb(212, 14, 14), #2e08ef);
+  color: #f6f3f3;
+  -webkit-animation: animacion 5s linear infinite;
+          animation: animacion 5s linear infinite;
+}
+
+@-webkit-keyframes animacion {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animacion {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.botonhome {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: #6cc091;
+}
+
+/* responsive*/
+@media (max-width: 768px) {
+  /*header*/
+  .mostrar-menu,
+.esconder-menu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #4d4d5c;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+/*footer*/
+#footer {
+  background-color: #4d4d5c;
+  width: 100%;
+}
+
+.contacto h4 {
+  color: #6cc091;
+}
+
+.contacto p {
+  color: #6cc091;
+}
+
+#footer .contacto {
+  margin: 0px;
+  text-align: center;
+}
+
+#footer .redessociales {
+  color: #6cc091;
+  width: 300px;
+  height: auto;
+  background-position: top center;
+  margin: 0px auto;
+  padding: 25px;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+#footer .copi {
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* nosotros1  */
+.nosotros {
+  background-image: url(../imagenes/nosotros/nosotros4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: auto;
+  height: 100vh;
+  text-align: center;
+}
+
+.nosotros h2 {
+  background-color: rgba(28, 33, 30, 0.537254902);
+  color: #6cc091;
+}
+
+.nosotros p {
+  background-color: rgba(28, 33, 30, 0.537254902);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: auto;
+}
+
+.contenedorTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* servicios1 */
+#servicios .peluqueria .txtpelu {
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+#servicios .imageng {
+  margin: 100px;
+  padding-top: 0px;
+  width: 1000px;
+  height: auto;
+  background-position: top center;
+}
+
+#servicios .imagenp {
+  width: 1000px;
+  height: auto;
+  background-position: top center;
+}
+
+#servicios {
+  background-image: url(../imagenes/home/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg);
+  margin: 1px;
+  padding: 209px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#servicios {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.card-title {
+  position: relative;
+  color: #6cc091;
+}
+
+.card-text {
+  color: #6cc090;
+}
+
+#servicios h2 {
+  color: #6cc091;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* productos1 */
+#alimentosSeccion {
+  height: auto;
+  background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+  text-align: center;
+}
+
+#alimentosSeccion h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accordion-item {
+  height: 50vh;
+  background-image: url(../imagenes/home/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg);
+}
+
+/* contacto1 */
+.contactanos {
+  background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactanos .titu {
+  width: 45%;
+  height: auto;
+}
+
+.titu h2 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid {
+  display: grid;
+  background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.grid img {
+  border: 2px solid black;
+  background-size: cover;
+}
+
+.grid h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tarjetas {
+  text-align: center;
+  background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+}
+
+.perrit {
+  background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+}
+
+.card {
+  color: #f6f3f3;
+  background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+}
+
+.balanceados .accordion-button {
+  background: radial-gradient(rgb(183, 184, 192), #f58b8b);
+}
+
+#collapseOne .vermasp {
+  color: #a20707;
+  background-color: aqua;
+}
+
+#collapseOne {
+  text-align: center;
+}
+
+#collapseTwo {
+  text-align: center;
+}
+
+#collapseThree {
+  text-align: center;
+}
+
+.text-muted {
+  color: #f6f3f3;
+}
+
+@media (min-width: 720px) {
+  #header {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(175, 31, 67);
+    justify-content: space-between;
+  }
+}
+.conteiner-intro {
+  background-image: url("../imagenes/home/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg");
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+
+#header .menu ul li a:hover {
+  color: #0e0f0e;
+}
+
+#footer {
+  background-color: rgb(175, 31, 67);
+  width: 100%;
+}/*# sourceMappingURL=proyecto .css.map */
