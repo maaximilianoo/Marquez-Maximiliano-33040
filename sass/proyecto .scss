@@ -202,25 +202,27 @@ header{
    width:auto ;
    height:100vh;
    text-align: center ;
-}
-.nosotros h2 {
-    background-color: #1c211e89;
-   color: #6cc091;
-}
-.nosotros p{
-    background-color: #1c211e89;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: auto ;
+        .nosotros h2 {
+            background-color: #1c211e89;
+            color: #6cc091;
+        .nosotros p{
+            background-color: #1c211e89;
+             color: #fff;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: auto ;
+        .contenedorTexto {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             text-align:center;
+             }
     
    
+       }
+    }
 }
-.contenedorTexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align:center;
-}
+
+
 
 
 

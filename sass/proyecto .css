@@ -12,43 +12,45 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
-.logo {
+header .logo {
   text-transform: uppercase;
   color: #6cc091;
   font-weight: 200;
 }
-
-.menu a {
+header .logo .menu a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 10px;
   transition: 0.4s;
 }
-
-.mostrar-menu,
-.esconder-menu {
+header .logo .menu a .mostrar-menu,
+header .logo .menu a .esconder-menu {
   font-size: 30px;
   cursor: pointer;
   display: none;
   transition: 0.4s;
 }
-
-.mostrar-menu {
+header .logo .menu a .mostrar-menu .mostrar-menu,
+header .logo .menu a .esconder-menu .mostrar-menu {
   order: 1;
 }
-
-.menu a:hover,
-.mostrar-menu:hover,
-.esconder-menu:hover {
-  color: #6cc091;
+header .logo .menu a .mostrar-menu .mostrar-menu .menu a:hover,
+header .logo .menu a .mostrar-menu .mostrar-menu .mostrar-menu:hover,
+header .logo .menu a .mostrar-menu .mostrar-menu .esconder-menu:hover,
+header .logo .menu a .esconder-menu .mostrar-menu .menu a:hover,
+header .logo .menu a .esconder-menu .mostrar-menu .mostrar-menu:hover,
+header .logo .menu a .esconder-menu .mostrar-menu .esconder-menu:hover {
+  color:#6cc091;
 }
-
-#check {
-  display: none;
+header .logo .menu a .mostrar-menu .mostrar-menu .menu a:hover #check,
+header .logo .menu a .mostrar-menu .mostrar-menu .mostrar-menu:hover #check,
+header .logo .menu a .mostrar-menu .mostrar-menu .esconder-menu:hover #check,
+header .logo .menu a .esconder-menu .mostrar-menu .menu a:hover #check,
+header .logo .menu a .esconder-menu .mostrar-menu .mostrar-menu:hover #check,
+header .logo .menu a .esconder-menu .mostrar-menu .esconder-menu:hover #check {
+display: none;
 }
 
 /*banner*/
@@ -200,20 +202,17 @@ header {
   height: 100vh;
   text-align: center;
 }
-
-.nosotros h2 {
+.nosotros .nosotros h2 {
   background-color: rgba(28, 33, 30, 0.537254902);
   color: #6cc091;
 }
-
-.nosotros p {
+.nosotros .nosotros h2 .nosotros p {
   background-color: rgba(28, 33, 30, 0.537254902);
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: auto;
 }
-
-.contenedorTexto {
+.nosotros .nosotros h2 .nosotros p .contenedorTexto {
   display: flex;
   flex-direction: column;
   justify-content: center;
