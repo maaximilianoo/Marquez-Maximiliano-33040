@@ -289,7 +289,7 @@ display: none;
 
 /* contacto1 */
 .contactanos {
-  background: radial-gradient(rgb(24, 35, 189), #f58b8b);
+ background-image: url(../imagenes/home/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg);
   padding: 10px;
   display: flex;
   flex-direction: column;
